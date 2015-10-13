@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>交通資訊 ─ 狄凡爵牙醫診所</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/navi.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/traffic.css">
+
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+	<script>
+		function mymap(){
+			var lat=24.99599;
+			var lng=121.48946;
+			var _map=document.getElementById("map");
+			var latlng=new google.maps.LatLng(lat,lng);
+			var gmap=new google.maps.Map(_map,{
+				zoom:17,
+				center:latlng,
+				mapTypeId:google.maps.MapTypeId.ROADMAP //ROADMAP,HYBRID,SATELLITE,TERRAIN
+				});
+			var marker = new google.maps.Marker({
+				position:latlng,
+				map:gmap,
+				title:"狄凡爵牙醫診所",
+				icon:"images/slogo.png"
+				})
+			}	
+	</script>
+	<script src="js/fixHeight.js"></script>
+	<script src="js/normal.js"></script>
+	<script src="js/home.js"></script>
+
+
+</head>
+<body id="top">
+	<header class="d-header">
+		<div class="box-in">
+			<p class="d-header-logo"><a href="index.html"><img src="images/logo.png"></a></p>
+			<ul class="d-header-social social clearfix">
+				<li class="social_item social_item01"><a href="http://www.facebook.com" target="_blank"><img src="images/fb.png"></a></li>
+				<li class="social_item social_item02"><a href="mailto:dvgdental@gmail.com"><img src="images/email.png"></a></li>
+				<li class="social_item social_item03"><a href="http://plus.google.com" target="_blank"><img src="images/gp.png"></a></li>
+			</ul>
+			<p class="header-btn-menu"><a href=""><img src="images/hd-btn-menu.png"></a></p>
+		</div>
+			<nav class="navi">
+				<ul>
+					<li class="navi_item01 navi_item">
+						<a href="reserve.html">
+							<div class="navi_en navi_txt">線 上 預 約</div>
+							<div class="navi_ch navi_txt">線上預約</div>
+						</a>
+					</li>
+					<li class="navi_item02 navi_item">
+						<a href="medicalnews.html">
+							<div class="navi_en navi_txt">醫 療 新 知</div>
+							<div class="navi_ch navi_txt">醫療新知</div>
+						</a>
+					</li>
+					<li class="navi_item03 navi_item">
+						<a href="service.html">
+							<div class="navi_en navi_txt">服 務 項 目</div>
+							<div class="navi_ch navi_txt">服務項目</div>
+						</a>
+					</li>
+					<li class="navi_item04 navi_item">
+						<a href="traffic.html">
+							<div class="navi_en navi_txt">交 通 資 訊</div>
+							<div class="navi_ch navi_txt">交通資訊</div>
+						</a>
+					</li>
+					<li class="navi_item05 navi_item">
+						<a href="intro.html">
+							<div class="navi_en navi_txt">關 於 我 們</div>
+							<div class="navi_ch navi_txt">關於我們</div>
+						</a>
+					</li>
+				</ul>
+			<!-- /.navi --></nav>
+<!-- /.d-header --></header>
+
+		<h1 class="page-title">
+		</h1>
+		<div class="contents">
+			<p class="traffic-image01"><img src="images/traffic.png"></p>
+			<br/>
+			<p class="traffic-image02"><img src="images/trafficdraw.png"></p>
+			<br/>
+	<section class="section-type03">
+		<div class="section_contents">
+			<ul class="list-type02">
+				<li class="list-type02_item">
+					<p class="clm01">地址</p>
+					<p class="clm02">235-51 新北市中和區連城路311號</p>
+				</li>
+				<li class="list-type02_item">
+					<p class="clm01">營業時間</p>
+					<p class="clm02">平日</p>
+					<p class="clm03">AM. 09：30─12：30　PM. 02：00─10：00</p>
+				</li>
+				<li class="list-type02_item">
+					<p class="clm01"></p>
+					<p class="clm02">星期六</p>
+					<p class="clm03">AM. 09：30─12：30　PM. 02：00─06：00</p>
+				</li>
+				<li class="list-type02_item">
+					<p class="clm01">公休</p>
+					<p class="clm02">星期日、例假日</p>
+					<p class="clm03"></p>
+				</li>
+				<li class="list-type02_item">
+					<p class="clm01">電話號碼</p>
+					<p class="clm02">02-2222-9999　02-2222-8888</p>
+				</li>
+				<li class="list-type02_item">
+					<p class="clm01">公車路線</p>
+					<p class="clm04">262、214、275、275副、311、706、藍41、F512、萬大樹林線</p>
+					<!-- <p class="clm02"></p> -->
+				</li>
+				<li class="list-type02_item">
+					<p class="clm01">停車場</p>
+					<p class="clm02">周邊有兩個停車場</p>
+					<p class="clm03"></p>
+				</li>
+			</ul>
+<!-- /.section_contents --></div>
+	</section>
+
+		<section class="traffic">
+			<div class="traffic_title-wrap">
+			<h2 class="traffic_title"><img src="images/gmap.png"></h2>
+			</div>
+			<div class="traffic_contents">
+				<div id="map"><script>mymap();</script></div>
+			</div>
+			</div>
+	</section>
+
+				
+
+	<section class="followus">
+		<header class="followus_title-wrap">
+			<h2 class="followus_title"><img src="images/follow.png"></h2>
+		</header>
+			<div class="followus_contents">
+				<ul class="followus-social social clearfix">
+					<li class="social_item social_item01"><a href="http://www.facebook.com" target="_blank"><img src="images/fb_e.png"></a></li>
+					<li class="social_item social_item02"><a href="mailto:dvgdental@gmail.com" target="_blank"><img src="images/email_e.png"></a></li>
+					<li class="social_item social_item03"><a href="http://plus.google.com" target="_blank"><img src="images/gp_e.png"></a></li>
+				</ul>
+<!-- /.followus_contents --></div>
+<!-- /.followus --></section>
+
+
+
+	<footer class="d-footer">
+		<nav class="footer-navi">
+			<ul>
+				<li><a href="index.html">首頁</a></li>
+				<li><a href="intro.html">診所介紹</a></li>
+				<li><a href="service.html">服務項目</a></li>
+				<li><a href="topic.html">最新消息</a></li>
+				<li><a href="traffic.html">交通資訊</a></li>
+				<li><a href="share.html">體驗分享</a></li>
+				<li><a href="traffic.html">連絡我們</a></li>
+				<li><a href="job.html">人才招募</a></li>
+			</ul>
+		</nav>
+		<p class="d-footer-btn"><a href="index.html" target="_blank"><img src="images/logo3.png"></a></p>
+		<p class="d-footer-copyright"><img src="images/footer-copyright.png"></p>
+	<!-- /.d-footer --></footer>
+		<p class="footer-page_top"><a href="#top" class="page-link"><img src="images/footer-btn-pagetop.png"></a></p>
+</body>
+</html>
